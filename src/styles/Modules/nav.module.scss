@@ -1,0 +1,64 @@
+@import '../main.scss';
+
+.nav {
+  position: relative;
+  background-color: $color-text;
+  z-index: 2; // to remove background color line
+  
+&::before { // full bar across
+  position: absolute;
+  content: '';
+  height: 100%;
+  background-color: $color-text;
+  width: 100vw;
+  z-index: -1;
+  left: calc((-100vw + 65rem) / 2);
+}
+  
+  ul {
+    list-style: none;
+    display: flex;
+    padding: .5rem 0;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+@media only screen and (max-width: $bp-medium) {
+  justify-content: center;
+}
+ 
+    
+    li { 
+
+      a:link, a:visited {
+        padding: .7rem;
+        color: $color-background;
+        text-decoration: none;
+        outline: none;
+        transition: all .2s;
+
+ 
+      }
+
+      a:hover, a:focus {
+        background-color: $color-background;
+        color: $color-text;
+      }
+
+      a:active {
+        background-color: darken($color-background, 10%);
+      }
+      
+
+      .contact:hover, .contact:focus {
+        background-color: $color-blue;
+ 
+      }
+
+      .contact:active {
+        background-color: darken($color-blue, 10%);
+      }
+    }
+  }
+}

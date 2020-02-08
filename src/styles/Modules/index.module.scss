@@ -1,0 +1,326 @@
+@import '../main.scss';
+
+// first section in headerAndIntro.module.scss 
+
+///////////
+//ABOUT/////
+///////////
+
+.about {
+  background-color: $color-grey-light;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  padding-bottom: 17rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 0;
+  }
+  
+  &_container {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  
+  &_content {
+    max-width: 50rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  &_text {
+    font-size: 1.2rem;
+    color: $color-grey-dark;
+    line-height: 1.9;
+    font-weight: 400;
+
+  }
+
+  &_link:link, 
+  &_link:visited {
+    color: currentColor;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 .3rem;
+    transition: all .1s;
+    border-radius: 2px;
+  }
+
+  &_link:hover,
+  &_link:focus {
+    background-color: $color-grey-dark;
+    color: $color-grey-light;
+    outline:none;
+  }
+
+  &_link:active {
+   background-color: darken($color-grey-dark, 30%);
+  }
+
+  &_imgContainer {
+    margin-top: 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
+    align-items: end;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: auto;
+      
+    }
+  }
+
+  &_figure {
+  
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+
+    &_caption {
+      text-align: end;
+      padding-top: .75rem;
+      padding-right: 1rem;
+      font-size: .8rem;
+      color: $color-grey-dark;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 12px;
+        padding: 0;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      &_link:link,
+      &_link:visited {
+        font-weight: 500;
+      }
+
+
+    }
+  }
+  &_img {
+    border-radius: 30px;
+    box-shadow: 0 .2rem .4rem .1rem rgba(black, 0.2);
+  }
+}
+
+
+////////////////
+//COMPOSITIONS//
+///////////////
+
+.compositions {
+  
+  background-color: $color-background;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  margin-top: -17rem;
+  padding-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: 0;
+    padding: 5rem 1rem;
+  }
+
+  &_container {
+    max-width: 65rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 12rem 2rem 5rem 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+    }
+    
+  }
+
+  &_header_2 {
+    color: $color-text;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+  }
+
+  &_img_1_container {
+    width: 20rem;
+    opacity: .9;
+    position: absolute;
+    top: 25rem;
+    right: 5rem;
+
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 30vw;
+      min-width: 15rem;
+      position: static;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+
+  &_img_2_container {
+   
+    max-width: 28rem;
+    opacity: .9;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 3rem auto 0 auto;
+    }
+  }
+
+  &_img_1 {
+    border-radius: 40px;
+  }
+  &_img_2 {
+    border-radius: 20px;
+  }
+
+  &_group {
+
+    max-width: 50rem;
+    margin: 0 auto;
+
+    &_header {
+     margin-top: 3rem;
+    }
+  }
+
+  &_ul{
+    list-style-type: none;
+    color: $color-grey-light;
+    font-weight: 400;
+    @media only screen and (max-width: $bp-last) {
+      text-align: left;
+    }
+  }
+
+  &_li {
+  padding: .2rem 1rem; 
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: .7rem;
+    }  
+
+
+
+  
+  }
+
+  &_a:link, 
+  &_a:visited {
+    text-decoration: none;
+    color: $color-grey-light;
+    border-radius: 3px;
+    font-weight: 400;
+    transition: all .15s;
+    padding: .2rem  .5rem;
+    margin-left: -.5rem;
+  }
+
+  &_a:hover,
+  &_a:focus {
+    outline: none;
+    background-color: $color-grey-light;
+    color: $color-grey-dark;
+  }
+
+  &_a:active {
+    background-color: darken($color-grey-light, 20%);
+  }
+}
+
+
+/////////////////
+////////CONTACT//
+////////////////
+
+.contact {
+  background: $color-grey-light;
+  padding: 18rem 3rem 6rem 3rem;
+  margin-top: -17rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 0;
+    margin: 0;
+  }
+
+
+  &_header {
+    color: $color-background;
+    font-weight: 500;
+    margin-left: 15rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 0;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+  &_email {
+    display: block;
+    border: none;
+    background: $color-grey-light;
+    margin: 2rem auto 0 auto;
+    color: $color-background;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    transition: all .2s;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      cursor: pointer;
+      background: $color-background;
+      color: $color-text;
+    }
+
+    &:active {
+      background: lighten($color-background, 15%);
+    }
+
+  
+
+    
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.3rem;
+    }
+
+    &_alert {
+      text-align: center;
+      margin-top: 1rem;
+      color: $color-text;
+      background: $color-blue;
+      font-weight: 400;
+      opacity: 0;
+    }
+
+  }
+}
+
+      .show {
+
+      animation-name: fadeInOut;
+      animation-duration: 3s;
+    }
+
+

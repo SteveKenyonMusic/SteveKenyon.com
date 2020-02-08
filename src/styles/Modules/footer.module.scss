@@ -1,0 +1,111 @@
+@import '../main.scss';
+
+.footer {
+  background: $color-background;
+  min-height: 15rem;
+  padding: 1.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 0 1.5rem 0;
+  }
+}
+
+.mainContainer {
+  flex-grow: 1; 
+}
+
+.nav {
+  margin-top: 5rem;
+  background: $color-text;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 3rem;
+
+    background: $color-background;
+  }
+}
+
+.ul {
+  max-width: 35rem;
+  list-style: none;
+  font-size: 1.1rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,min-content);
+    grid-gap: 2rem;
+  }
+  
+}
+
+.li {
+  padding: .9rem;
+}
+
+.a:link, 
+.a:visited {
+  text-decoration: none;
+  color: $color-background;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.1rem 3.5rem;
+  border-radius: 2px;
+  transition: all .2s;
+  outline: none;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.15rem 1.5rem;
+    color: $color-text;
+  }
+}
+
+.a:hover, 
+.a:focus {
+  background: $color-background;
+  color: $color-text;
+
+  @media only screen and (max-width: $bp-small) {
+  background: $color-text;
+  color: $color-background;
+  }
+}
+
+.a:active {
+  background: darken($color-background, 10%);
+  @media only screen and (max-width: $bp-small) {
+    background: darken($color-text, 10%);
+   
+    }
+}
+
+
+
+.line {
+  margin-top: 7rem;
+  margin-bottom: 2rem;  
+  height: 2px;
+  background: $color-text;
+
+}
+
+.copyright, .author {
+  font-size: .8rem;
+  color: $color-text;
+  font-weight: 400;
+  letter-spacing:.7px;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 12px;
+  }
+}

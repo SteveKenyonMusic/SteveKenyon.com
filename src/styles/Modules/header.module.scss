@@ -1,0 +1,87 @@
+@import '../main.scss';
+// for header
+
+.headerSection {
+  background-color: $color-background;
+  padding: 2rem 0;
+  min-height: 100vh;
+  backface-visibility: hidden;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.headerPrimary {
+  font-size: 5rem;
+  color: $color-text;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  padding: 0 2.5rem;
+
+  animation-name: slideFromLeft;
+  animation-duration: 2s;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
+}
+
+.intro {
+  margin-top: 5rem;
+  padding: 0 2.5rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 4rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-top: 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 4rem;
+
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, min-content);
+    justify-items: center;
+    gap: 4rem;
+  }
+
+  &_img {
+    min-width: 20rem;
+    border-radius: 20%;
+
+    @media only screen and (max-width: $bp-medium) {
+      min-width: auto;
+      max-width: 25rem;
+      width: 50%;
+    }
+  
+  
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: linear-gradient(to bottom right, rgba($color-background, 1), rgba($color-background, .4));
+      background-color: $color-background;
+      z-index: 2;
+      opacity: .3;
+    }
+
+  }
+
+  &_content {
+    max-width: 35rem;
+    align-self: center;
+    &_shortBio {
+      color: $color-text;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
+}
+
