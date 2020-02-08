@@ -45,15 +45,14 @@ const IndexPage = () => {
   const removeClass = () => { document.getElementById('emailAlert').classList.remove(indexStyles.show) }
 
   const onEmailClick = async () => {
-    try {
-      await navigator.clipboard.writeText(
-        document.getElementById("email").innerHTML) // write button content to clipboard- stevekenyonmusic@gmail.com
-        document.getElementById("emailAlert").classList.add(indexStyles.show) // start animation of alert
 
-        setTimeout(removeClass, 3100) // remove class after animation so you can trigger it again on click
-    } catch (err) {
-      alert(err)
-    }
+    const copyText = document.getElementById("emailAddressHidden") // select hidden input
+
+    copyText.focus() // focus
+    copyText.select() // select
+    document.execCommand("copy") // copy to clipboard
+    document.getElementById("emailAlert").classList.add(indexStyles.show) // start animation
+    setTimeout(removeClass, 3100)
   }
 
   return (
@@ -318,6 +317,7 @@ const IndexPage = () => {
           >
             SteveKenyonMusic@gmail.com
           </button>
+          <input tabIndex="-1" type="text" className={indexStyles.hideInput} id="emailAddressHidden" value="SteveKenyonMusic@gmail.com" readOnly/>
           <div className={indexStyles.contact_email_alert} id="emailAlert">Email was copied to your clipboard!</div>
         </section>
       </main>
