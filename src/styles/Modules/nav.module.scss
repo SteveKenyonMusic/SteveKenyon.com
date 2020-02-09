@@ -13,6 +13,10 @@
   width: 100vw;
   z-index: -1;
   left: calc((-100vw + 65rem) / 2);
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
 }
   
   ul {
