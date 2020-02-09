@@ -51,6 +51,7 @@ const IndexPage = () => {
     copyText.focus() // focus
     copyText.select() // select
     document.execCommand("copy") // copy to clipboard
+    copyText.blur()
     document.getElementById("emailAlert").classList.add(indexStyles.show) // start animation
     setTimeout(removeClass, 3100)
   }

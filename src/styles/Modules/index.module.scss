@@ -306,6 +306,7 @@
     }
 
     &_alert {
+      pointer-events: none;
       text-align: center;
       margin-top: 1rem;
       color: $color-text;
@@ -324,6 +325,13 @@
     }
 
     .hideInput {
+      display: block;
+      margin: 0 auto;
+      font-size: 0.1rem;
+      outline: none;
       opacity: 0;
+      cursor: default;
+
+
     }
 
