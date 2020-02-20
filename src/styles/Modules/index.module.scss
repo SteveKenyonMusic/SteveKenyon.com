@@ -319,7 +319,7 @@
   }
 }
 
-      .show {
+      .showAnimation {
 
       animation-name: fadeInOut;
       animation-duration: 3s;
@@ -332,7 +332,8 @@
       outline: none;
       opacity: 0;
       cursor: default;
-
-
     }
 
+.displayNone {
+  display:none;
+}
