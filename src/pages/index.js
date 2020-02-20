@@ -42,19 +42,21 @@ const IndexPage = () => {
     }
   `)
 
-  const removeClass = () => { document.getElementById('emailAlert').classList.remove(indexStyles.show) }
+const removeAnimation = () => { document.getElementById('emailAlert').classList.remove(indexStyles.showAnimation) }
+const showHiddenInput = () => { document.getElementById('emailAddressHidden').classList.remove(indexStyles.displayNone) } 
+const removeHiddenInput = () => { document.getElementById('emailAddressHidden').classList.add(indexStyles.displayNone)}
+const onEmailClick = async () => {
 
-  const onEmailClick = async () => {
+  showHiddenInput()  // remove display none from hidden input
+  const copyText = document.getElementById("emailAddressHidden") // select hidden input
 
-    const copyText = document.getElementById("emailAddressHidden") // select hidden input
-
-    copyText.focus() // focus
-    copyText.select() // select
-    document.execCommand("copy") // copy to clipboard
-    copyText.blur()
-    document.getElementById("emailAlert").classList.add(indexStyles.show) // start animation
-    setTimeout(removeClass, 3100)
-  }
+  copyText.focus() // focus
+  copyText.select() // select
+  document.execCommand("copy") // copy to clipboard
+  removeHiddenInput() // add display none again to remove input
+  document.getElementById("emailAlert").classList.add(indexStyles.showAnimation) // start animation
+  setTimeout(removeAnimation, 3100)
+}
 
   return (
     <Fragment>
@@ -318,7 +320,7 @@ const IndexPage = () => {
           >
             SteveKenyonMusic@gmail.com
           </button>
-          <input tabIndex="-1" type="text" className={indexStyles.hideInput} id="emailAddressHidden" value="SteveKenyonMusic@gmail.com" readOnly/>
+          <input tabIndex="-1" type="text" className={`${indexStyles.hideInput} ${indexStyles.displayNone}`} id="emailAddressHidden" value="SteveKenyonMusic@gmail.com" readOnly/>
           <div className={indexStyles.contact_email_alert} id="emailAlert">Email was copied to your clipboard!</div>
         </section>
       </main>
