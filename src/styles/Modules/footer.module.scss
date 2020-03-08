@@ -109,3 +109,28 @@
     font-size: 12px;
   }
 }
+
+.hideakiLink {
+
+  &:link,
+  &:visited {
+  color: $color-text;
+  text-decoration: none;
+  padding: 0 2px;
+  transition: all .2s;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-text;
+    color: $color-background;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: darken($color-text, 15%);
+  }
+}

@@ -30,7 +30,7 @@ const Footer = () => {
       <div className={footerStyles.copyAndAuthorContainer}>
         <div className={footerStyles.line}/>
         <p className={footerStyles.copyright}>Copyright &copy; {currentYear}</p>
-        <p className={footerStyles.author}>Built by Hideaki Aomori</p>
+        <p className={footerStyles.author}>Built by <a className={footerStyles.hideakiLink} target="_blank" rel="noopener noreferrer" href="https://hideakiaomori.com/dev">Hideaki Aomori</a></p>
       </div>
     </footer>
   )
