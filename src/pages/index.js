@@ -42,21 +42,34 @@ const IndexPage = () => {
     }
   `)
 
-const removeAnimation = () => { document.getElementById('emailAlert').classList.remove(indexStyles.showAnimation) }
-const showHiddenInput = () => { document.getElementById('emailAddressHidden').classList.remove(indexStyles.displayNone) } 
-const removeHiddenInput = () => { document.getElementById('emailAddressHidden').classList.add(indexStyles.displayNone)}
-const onEmailClick = async () => {
+  const removeAnimation = () => {
+    document
+      .getElementById("emailAlert")
+      .classList.remove(indexStyles.showAnimation)
+  }
+  const showHiddenInput = () => {
+    document
+      .getElementById("emailAddressHidden")
+      .classList.remove(indexStyles.displayNone)
+  }
+  const removeHiddenInput = () => {
+    document
+      .getElementById("emailAddressHidden")
+      .classList.add(indexStyles.displayNone)
+  }
+  const onEmailClick = async () => {
+    showHiddenInput() // remove display none from hidden input
+    const copyText = document.getElementById("emailAddressHidden") // select hidden input
 
-  showHiddenInput()  // remove display none from hidden input
-  const copyText = document.getElementById("emailAddressHidden") // select hidden input
-
-  copyText.focus() // focus
-  copyText.select() // select
-  document.execCommand("copy") // copy to clipboard
-  removeHiddenInput() // add display none again to remove input
-  document.getElementById("emailAlert").classList.add(indexStyles.showAnimation) // start animation
-  setTimeout(removeAnimation, 3100)
-}
+    copyText.focus() // focus
+    copyText.select() // select
+    document.execCommand("copy") // copy to clipboard
+    removeHiddenInput() // add display none again to remove input
+    document
+      .getElementById("emailAlert")
+      .classList.add(indexStyles.showAnimation) // start animation
+    setTimeout(removeAnimation, 3100)
+  }
 
   return (
     <Fragment>
@@ -194,7 +207,16 @@ const onEmailClick = async () => {
                   </a>
                 </li>
                 <li className={indexStyles.compositions_li}>Best of Seven</li>
-                <li className={indexStyles.compositions_li}>Look Down</li>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=6ObGmorMZUc "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Look Down
+                  </a>
+                </li>
                 <li className={indexStyles.compositions_li}>
                   Chrismastime is Here (Guaraldi, arr. Kenyon)
                 </li>
@@ -250,7 +272,14 @@ const onEmailClick = async () => {
                   </a>
                 </li>
                 <li className={indexStyles.compositions_li}>
-                  Burton Lane Medley (doubling woodwind trio)
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=G-n_ebittro&t=11s "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Burton Lane Medley (doubling woodwind trio)
+                  </a>
                 </li>
                 <li className={indexStyles.compositions_li}>
                   <a
@@ -278,7 +307,14 @@ const onEmailClick = async () => {
               </h3>
               <ul className={indexStyles.compositions_ul}>
                 <li className={indexStyles.compositions_li}>
-                  Das Lied von der Subway (piccolo and tuba)
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=N3LNEyj4GuE "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Das Lied von der Subway (piccolo and tuba)
+                  </a>
                 </li>
                 <li className={indexStyles.compositions_li}>
                   <a
@@ -320,8 +356,17 @@ const onEmailClick = async () => {
           >
             SteveKenyonMusic@gmail.com
           </button>
-          <input tabIndex="-1" type="text" className={`${indexStyles.hideInput} ${indexStyles.displayNone}`} id="emailAddressHidden" value="SteveKenyonMusic@gmail.com" readOnly/>
-          <div className={indexStyles.contact_email_alert} id="emailAlert">Email was copied to your clipboard!</div>
+          <input
+            tabIndex="-1"
+            type="text"
+            className={`${indexStyles.hideInput} ${indexStyles.displayNone}`}
+            id="emailAddressHidden"
+            value="SteveKenyonMusic@gmail.com"
+            readOnly
+          />
+          <div className={indexStyles.contact_email_alert} id="emailAlert">
+            Email was copied to your clipboard!
+          </div>
         </section>
       </main>
       <Footer />
