@@ -8,4 +8,7 @@ do the changes
 git add and commit
 `git push --set-upstream origin <branchName>`
 merge with dev branch on gitHub
-merge dev with master
+switch back to dev branch
+git pull origin dev
+gatsby develop - check site
+if good, final merge dev -> master
