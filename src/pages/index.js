@@ -226,6 +226,7 @@ const IndexPage = () => {
                   >
                     Look Down
                   </a>
+               </li>
               </ul>
             </div>
             <div className={indexStyles.compositions_group}>
