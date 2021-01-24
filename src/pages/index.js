@@ -220,11 +220,11 @@ const IndexPage = () => {
                 <li className={indexStyles.compositions_li}>
                   <a
                     className={indexStyles.compositions_a}
-                    href="https://www.youtube.com/watch?v=5_RM60W6EK8&ab "
+                    href="https://www.youtube.com/watch?v=6ObGmorMZUc "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Chrismastime is Here (Guaraldi, arr. Kenyon)
+                    Look Down
                   </a>
                 </li>
               </ul>
