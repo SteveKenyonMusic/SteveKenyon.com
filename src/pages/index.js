@@ -249,6 +249,16 @@ const IndexPage = () => {
                 <li className={indexStyles.compositions_li}>
                   Languid and Bittersweet
                 </li>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=gBYSPpRkbRk&ab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BlueYorkestra
+                  </a>
+                </li>
               </ul>
             </div>
             <div className={indexStyles.compositions_group}>
