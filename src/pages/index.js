@@ -99,7 +99,7 @@ const IndexPage = () => {
               >
                 In addition to his compositions for the
                 <a
-                  href="http://www.nysaxophonequartet.com/NYSQ/Home.html"
+                  href="https://www.nysaxophonequartet.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={indexStyles.about_link}
@@ -224,7 +224,7 @@ const IndexPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Christmastime is Here
+                    Christmastime is Here (Guaraldi, arr. Kenyon)
                   </a>
                 </li>
               </ul>
