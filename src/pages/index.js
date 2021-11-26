@@ -301,7 +301,7 @@ const IndexPage = () => {
                 <li className={indexStyles.compositions_li}>
                   <a
                     className={indexStyles.compositions_a}
-                    href="https://www.youtube.com/watch?v=-gffxyCwWFo"
+                    href="https://youtu.be/QA4wEGr9puQ"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
