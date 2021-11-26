@@ -7,7 +7,7 @@ import headerStyles from "../styles/Modules/header.module.scss"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      headshot: file(relativePath: { eq: "headshot.jpeg" }) {
+      headshot: file(relativePath: { eq: "headshot.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 320) {
             ...GatsbyImageSharpFluid
