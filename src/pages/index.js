@@ -1,42 +1,34 @@
 import React, { Fragment } from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Head from "../components/helmetHead"
 import Header from "../components/headerAndIntro"
 import Footer from "../components/footer"
-import indexStyles from "../styles/Modules/index.module.scss"
+import * as indexStyles from "../styles/Modules/index.module.scss"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
       nyphil: file(relativePath: { eq: "nyPhilSaxes.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       composer: file(relativePath: { eq: "composerHeadshot.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       conducting: file(relativePath: { eq: "conducting.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       nysq: file(relativePath: { eq: "nysqPerfPhoto1.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -74,8 +66,8 @@ const IndexPage = () => {
   return (
     <Fragment>
       <Head title="Index" />
-      <Header className={indexStyles.header} id="top" />
-      <main className={indexStyles.main}>
+      <Header id="top" />
+      <main>
         <section className={indexStyles.about} id="about">
           <div className={indexStyles.about_container}>
             <h2
@@ -134,9 +126,9 @@ const IndexPage = () => {
               </p>
               <div className={indexStyles.about_imgContainer}>
                 <figure className={indexStyles.about_figure}>
-                  <Img
+                  <GatsbyImage
                     className={indexStyles.about_img}
-                    fluid={data.nyphil.childImageSharp.fluid}
+                    image={data.nyphil.childImageSharp.gatsbyImageData}
                     alt="Steve playing saxophone with the NY Phil"
                   />
                   <figcaption className={indexStyles.about_figure_caption}>
@@ -144,9 +136,9 @@ const IndexPage = () => {
                   </figcaption>
                 </figure>
                 <figure className={indexStyles.about_figure}>
-                  <Img
+                  <GatsbyImage
                     className={indexStyles.about_img}
-                    fluid={data.nysq.childImageSharp.fluid}
+                    image={data.nysq.childImageSharp.gatsbyImageData}
                     alt="Steve playing saxophone with the NY Saxophone Quartet"
                   />
                   <figcaption className={indexStyles.about_figure_caption}>
@@ -172,9 +164,9 @@ const IndexPage = () => {
               compositions
             </h2>
             <figure className={indexStyles.compositions_img_1_container}>
-              <Img
+              <GatsbyImage
                 className={indexStyles.compositions_img_1}
-                fluid={data.composer.childImageSharp.fluid}
+                image={data.composer.childImageSharp.gatsbyImageData}
                 alt="Steve by a piano"
               />
             </figure>
@@ -355,15 +347,12 @@ const IndexPage = () => {
             </div>
 
             <figure className={indexStyles.compositions_img_2_container}>
-              <Img
+              <GatsbyImage
                 className={indexStyles.compositions_img_2}
-                fluid={data.conducting.childImageSharp.fluid}
+                image={data.conducting.childImageSharp.gatsbyImageData}
                 alt="Steve conducting at a recording session for his piece"
               />
-              <figcaption
-                className={indexStyles.forJustJumpingFromNav}
-                id="contact"
-              ></figcaption>
+              <figcaption id="contact"></figcaption>
             </figure>
           </div>
         </section>
