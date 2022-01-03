@@ -99,7 +99,7 @@ const IndexPage = () => {
               >
                 In addition to his compositions for the
                 <a
-                  href="http://www.nysaxophonequartet.com/NYSQ/Home.html"
+                  href="https://www.nysaxophonequartet.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={indexStyles.about_link}
@@ -220,11 +220,11 @@ const IndexPage = () => {
                 <li className={indexStyles.compositions_li}>
                   <a
                     className={indexStyles.compositions_a}
-                    href="https://www.youtube.com/watch?v=6ObGmorMZUc "
+                    href="https://www.youtube.com/watch?v=5_RM60W6EK8&ab "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Look Down
+                    Christmastime is Here (Guaraldi, arr. Kenyon)
                   </a>
                 </li>
               </ul>
@@ -248,6 +248,16 @@ const IndexPage = () => {
                 </li>
                 <li className={indexStyles.compositions_li}>
                   Languid and Bittersweet
+                </li>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=gBYSPpRkbRk&ab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BlueYorkestra
+                  </a>
                 </li>
               </ul>
             </div>
