@@ -6,7 +6,7 @@
 - `gatsby develop`
 - code, git add and commit
 - when done, `git push --set-upstream origin <branchName>`
-- merge with dev branch on gitHub
+- merge to <strong>dev branch</strong> (not main) on gitHub
 - switch back to dev branch
 - git pull origin dev
 - `gatsby develop` - check to make sure everything works
