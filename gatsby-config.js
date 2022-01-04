@@ -14,15 +14,27 @@ module.exports = {
         name: "images",
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-sharp",
+    },
+    {
+      resolve: "gatsby-plugin-sharp",
+    },
     {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "en",
       },
     },
-    "gatsby-plugin-favicon",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Steve Kenyon",
+        start_url: "/",
+        icon: "src/favicon.png",
+        crossOrigin: "use-credentials",
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
