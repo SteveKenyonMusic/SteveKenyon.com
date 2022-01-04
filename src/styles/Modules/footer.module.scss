@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import "../main.scss";
 
 .footer {
   background: $color-background;
@@ -7,7 +7,6 @@
 
   display: flex;
   flex-direction: column;
-  
 
   @media only screen and (max-width: $bp-small) {
     padding: 0 0 1.5rem 0;
@@ -15,7 +14,7 @@
 }
 
 .mainContainer {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .nav {
@@ -42,17 +41,16 @@
 
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: auto;
-    grid-template-rows: repeat(3,min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 2rem;
   }
-  
 }
 
 .li {
-  padding: .9rem;
+  padding: 0.9rem;
 }
 
-.a:link, 
+.a:link,
 .a:visited {
   text-decoration: none;
   color: $color-background;
@@ -60,7 +58,7 @@
   text-transform: uppercase;
   padding: 1.1rem 3.5rem;
   border-radius: 2px;
-  transition: all .2s;
+  transition: all 0.2s;
   outline: none;
 
   @media only screen and (max-width: $bp-small) {
@@ -69,14 +67,14 @@
   }
 }
 
-.a:hover, 
+.a:hover,
 .a:focus {
   background: $color-background;
   color: $color-text;
 
   @media only screen and (max-width: $bp-small) {
-  background: $color-text;
-  color: $color-background;
+    background: $color-text;
+    color: $color-background;
   }
 }
 
@@ -84,25 +82,22 @@
   background: darken($color-background, 10%);
   @media only screen and (max-width: $bp-small) {
     background: darken($color-text, 10%);
-   
-    }
+  }
 }
-
-
 
 .line {
   margin-top: 7rem;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
   height: 2px;
   background: $color-text;
-
 }
 
-.copyright, .author {
-  font-size: .8rem;
+.copyright,
+.author {
+  font-size: 0.8rem;
   color: $color-text;
   font-weight: 400;
-  letter-spacing:.7px;
+  letter-spacing: 0.7px;
   text-align: center;
 
   @media only screen and (max-width: $bp-largest) {
@@ -111,13 +106,12 @@
 }
 
 .hideakiLink {
-
   &:link,
   &:visited {
-  color: $color-text;
-  text-decoration: none;
-  padding: 0 2px;
-  transition: all .2s;
+    color: $color-text;
+    text-decoration: none;
+    padding: 0 2px;
+    transition: all 0.2s;
   }
 
   &:hover,
