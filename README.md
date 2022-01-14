@@ -10,4 +10,5 @@
 - switch back to dev branch
 - git pull origin dev
 - `gatsby develop` - check to make sure everything works
+- also run `gatsby build` and `gatsby serve` to see it in prod
 - if good, final merge dev -> master PR will prompt a test deploy with Netlify

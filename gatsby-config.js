@@ -21,6 +21,9 @@ module.exports = {
       resolve: "gatsby-plugin-sharp",
     },
     {
+      resolve: "gatsby-plugin-image",
+    },
+    {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "en",
