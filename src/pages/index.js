@@ -1,7 +1,5 @@
 import React, { Fragment } from "react"
-
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Head from "../components/helmetHead"
 import Header from "../components/headerAndIntro"
@@ -9,31 +7,6 @@ import Footer from "../components/footer"
 import * as indexStyles from "../styles/Modules/index.module.scss"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      nyphil: file(relativePath: { eq: "nyPhilSaxes.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      composer: file(relativePath: { eq: "composerHeadshot.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      conducting: file(relativePath: { eq: "conducting.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      nysq: file(relativePath: { eq: "nysqPerfPhoto1.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `)
-
   const removeAnimation = () => {
     document
       .getElementById("emailAlert")
@@ -126,9 +99,9 @@ const IndexPage = () => {
               </p>
               <div className={indexStyles.about_imgContainer}>
                 <figure className={indexStyles.about_figure}>
-                  <GatsbyImage
+                  <StaticImage
                     className={indexStyles.about_img}
-                    image={data.nyphil.childImageSharp.gatsbyImageData}
+                    src="../images/nyPhilSaxes.jpg"
                     alt="Steve playing saxophone with the NY Phil"
                   />
                   <figcaption className={indexStyles.about_figure_caption}>
@@ -136,9 +109,9 @@ const IndexPage = () => {
                   </figcaption>
                 </figure>
                 <figure className={indexStyles.about_figure}>
-                  <GatsbyImage
+                  <StaticImage
                     className={indexStyles.about_img}
-                    image={data.nysq.childImageSharp.gatsbyImageData}
+                    src="../images/nysqPerfPhoto1.png"
                     alt="Steve playing saxophone with the NY Saxophone Quartet"
                   />
                   <figcaption className={indexStyles.about_figure_caption}>
@@ -164,9 +137,9 @@ const IndexPage = () => {
               compositions
             </h2>
             <figure className={indexStyles.compositions_img_1_container}>
-              <GatsbyImage
+              <StaticImage
                 className={indexStyles.compositions_img_1}
-                image={data.composer.childImageSharp.gatsbyImageData}
+                src="../images/composerHeadshot.png"
                 alt="Steve by a piano"
               />
             </figure>
@@ -347,9 +320,9 @@ const IndexPage = () => {
             </div>
 
             <figure className={indexStyles.compositions_img_2_container}>
-              <GatsbyImage
+              <StaticImage
                 className={indexStyles.compositions_img_2}
-                image={data.conducting.childImageSharp.gatsbyImageData}
+                src="../images/conducting.jpg"
                 alt="Steve conducting at a recording session for his piece"
               />
               <figcaption id="contact"></figcaption>
