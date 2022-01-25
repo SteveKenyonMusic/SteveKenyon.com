@@ -82,16 +82,16 @@ const IndexPage = () => {
               <p
                 className={`${indexStyles.about_text} ${indexStyles.u_margin_bottom_medium}`}
               >
-                Currently playing Reed 1 at Mean Girls, he can be heard on
+                Currently playing Reed 1 at The Music Man, he can be heard on
                 dozens of Broadway albums. Other recordings: his own Fidel’s
                 Nightmare, and albums with Audra McDonald, NewYorkestra, Maria
                 Schneider, Gil Evans Project, Barbara Cook, Gotham Jazz
                 Orchestra, Tony Trishka, Judy Collins, and lots more. Live TV
                 includes many Lincoln Center and Kennedy Center events, Sound of
-                Music, Peter Pan, Today, Letterman. Other TV - Smash, Ed, Wonder
-                Pets, many jingles. Film - West Side Story (2020, with the NY
-                Philharmonic), Hollywoodland, Hail, Caesar!, and What Just
-                Happened, for which he also wrote some of the orchestrations.
+                Music, Peter Pan, Today, Letterman. Other TV - The Marvelous Mrs. Maisel, 
+                Schmigadoon, Smash, Ed, Wonder Pets, many jingles. Film - West Side Story 
+                (2021, with the NY Philharmonic), Hollywoodland, Hail, Caesar!, 
+                and What Just Happened, for which he also wrote some of the orchestrations.
               </p>
               <p className={`${indexStyles.about_text} `}>
                 A National Merit Scholar, he has bachelor’s and master’s degrees
