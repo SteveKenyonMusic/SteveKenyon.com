@@ -134,7 +134,7 @@ const IndexPage = () => {
             <h2
               className={`${indexStyles.header_2} ${indexStyles.compositions_header_2} ${indexStyles.u_right} ${indexStyles.u_margin_right} ${indexStyles.u_margin_bottom_huge}`}
             >
-              compositions
+              selected compositions
             </h2>
             <figure className={indexStyles.compositions_img_1_container}>
               <StaticImage
