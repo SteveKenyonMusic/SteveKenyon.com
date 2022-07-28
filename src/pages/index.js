@@ -284,7 +284,14 @@ const IndexPage = () => {
                   </a>
                 </li>
                 <li className={indexStyles.compositions_li}>
-                  The Next Day (quintet of woodwind doublers)
+                <a
+                    className={indexStyles.compositions_a}
+                    href="https://youtu.be/nNhJeyWCcDI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The Next Day (quintet of woodwind doublers)
+                  </a>
                 </li>
               </ul>
             </div>
