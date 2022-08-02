@@ -12,3 +12,8 @@
 - `gatsby develop` - check to make sure everything works
 - also run `gatsby build` and `gatsby serve` to see it in prod
 - if good, final merge dev -> master PR will prompt a test deploy with Netlify
+
+## prod fail
+
+- sometimes you may have to force refresh a served build
+- just open it in an incognito window to bypass any cache related issues
