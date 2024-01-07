@@ -326,7 +326,6 @@ const IndexPage = () => {
                     set)
                   </a>
                 </li>
-                <ul className={indexStyles.compositions_ul}>
                 <li className={indexStyles.compositions_li}>
                   <a
                     className={indexStyles.compositions_a}
