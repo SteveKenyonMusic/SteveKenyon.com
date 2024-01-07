@@ -323,6 +323,17 @@ const IndexPage = () => {
                     set)
                   </a>
                 </li>
+                <ul className={indexStyles.compositions_ul}>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://youtu.be/EyJxFK5hn6Q?si=EOjTXJtccZiox2y1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Come With Me (piano and percussion)
+                  </a>
+                </li>
               </ul>
             </div>
 
