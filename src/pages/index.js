@@ -293,6 +293,9 @@ const IndexPage = () => {
                     The Next Day (quintet of woodwind doublers)
                   </a>
                 </li>
+                <li className={indexStyles.compositions_li}>
+                      Day Three (quintet of woodwind doublers)
+                </li>
               </ul>
             </div>
             <div className={indexStyles.compositions_group}>
