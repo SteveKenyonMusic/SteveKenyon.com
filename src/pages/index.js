@@ -293,6 +293,9 @@ const IndexPage = () => {
                     The Next Day (quintet of woodwind doublers)
                   </a>
                 </li>
+                <li className={indexStyles.compositions_li}>
+                      Day Three (quintet of woodwind doublers)
+                </li>
               </ul>
             </div>
             <div className={indexStyles.compositions_group}>
@@ -321,6 +324,16 @@ const IndexPage = () => {
                   >
                     The Death of Webern (violin, viola, cello, bass, piano, drum
                     set)
+                  </a>
+                </li>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://youtu.be/EyJxFK5hn6Q?si=EOjTXJtccZiox2y1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Come With Me (piano and percussion)
                   </a>
                 </li>
               </ul>
