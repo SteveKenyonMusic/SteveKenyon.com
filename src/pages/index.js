@@ -82,7 +82,7 @@ const IndexPage = () => {
               <p
                 className={`${indexStyles.about_text} ${indexStyles.u_margin_bottom_medium}`}
               >
-                Currently playing woodwinds at Sweeney Todd, he can be heard on
+                Currently playing woodwinds at Sunset Boulevard, he can be heard on
                 dozens of Broadway albums. Other recordings: his own Fidel’s
                 Nightmare, and albums with Audra McDonald, NewYorkestra, Maria
                 Schneider, Gil Evans Project, Barbara Cook, Gotham Jazz
