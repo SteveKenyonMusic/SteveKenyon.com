@@ -309,6 +309,34 @@ const IndexPage = () => {
               <h3
                 className={`${indexStyles.compositions_group_header} ${indexStyles.header_3} ${indexStyles.u_margin_bottom_small}`}
               >
+                Saxtet
+              </h3>  
+              <ul className={indexStyles.compositions_ul}>
+                <li className={indexStyles.compositions_li}>
+                  Saxophone quartet plus bass and drums - a new group inspired by all the large and small ensembles I’ve listened to and played with.
+                </li>
+                <li className={indexStyles.compositions_li}>
+                  <a
+                    className={indexStyles.compositions_a}
+                    href="https://www.youtube.com/watch?v=tuFAiiWGx6I"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Not Abuela
+                  </a>
+                </li>
+                <li className={indexStyles.compositions_li}>
+                    Sylvester and John
+                </li>
+                <li className={indexStyles.compositions_li}>
+                    Zane Musa’s Giant Steps Melody (Coltrane/ Musa, arr. Kenyon)
+                </li>
+              </ul>
+            </div>
+            <div className={indexStyles.compositions_group}>
+              <h3
+                className={`${indexStyles.compositions_group_header} ${indexStyles.header_3} ${indexStyles.u_margin_bottom_small}`}
+              >
                 Other
               </h3>
               <ul className={indexStyles.compositions_ul}>
@@ -345,7 +373,7 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
-
+          
             <figure className={indexStyles.compositions_img_2_container}>
               <StaticImage
                 className={indexStyles.compositions_img_2}
