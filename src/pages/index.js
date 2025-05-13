@@ -310,11 +310,11 @@ const IndexPage = () => {
                 className={`${indexStyles.compositions_group_header} ${indexStyles.header_3} ${indexStyles.u_margin_bottom_small}`}
               >
                 Saxtet
-              </h3>  
+              </h3>
               <ul className={indexStyles.compositions_ul}>
-                <li className={indexStyles.compositions_li}>
                   Saxophone quartet plus bass and drums - a new group inspired by all the large and small ensembles I’ve listened to and played with.
-                </li>
+              </ul>
+              <ul className={indexStyles.compositions_ul}>
                 <li className={indexStyles.compositions_li}>
                   <a
                     className={indexStyles.compositions_a}
