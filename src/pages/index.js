@@ -307,7 +307,7 @@ const IndexPage = () => {
             </div>
             <div className={indexStyles.compositions_group}>
               <h3
-                className={`${indexStyles.compositions_group_header} ${indexStyles.header_3} ${indexStyles.u_margin_bottom_small}`}
+                className={`${indexStyles.compositions_group_header} ${indexStyles.header_3} `}
               >
                 Saxtet
               </h3>
